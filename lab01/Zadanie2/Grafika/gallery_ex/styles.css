@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: auto;
+    height: auto;
+    margin: 2em 20em 1em 20em;
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: cadetblue;
+    font-size: xx-large;
+    font-weight: 400;
+    border-left: 2px dotted gray;
+    border-bottom: 2px dotted gray;
+    border-top: 2px dotted gray;
+    padding: 0.2em;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    border-left: 2px dotted gray;
+    padding: 0.2em;
+}
+
+.gallery {
+    margin-top: 1em;
+    display: grid;
+    columns: 2;
+}
+
+.figure {
+    
+}
+
+.photo {
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.415);
+    padding: 2px;
+}
+
+.description {
+    border-left: 0;
+    
+}

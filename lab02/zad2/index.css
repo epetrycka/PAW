@@ -1,0 +1,45 @@
+body {
+    background-color: bisque;
+    margin: 0;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: burlywood;
+    justify-self: center;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.row-box {
+    height: 80px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.red-box {
+    border: 1px solid black;
+    margin: 0.5em;
+    background-color: rgb(237, 36, 36);
+    flex-grow: 1;
+}
+
+.blue-box {
+    border: 1px solid black;
+    margin: 0.5em;
+    background-color: rgb(90, 224, 226);
+    flex-grow: 2;
+}
+
+.yellow-box {
+    border: 1px solid black;
+    margin: 0.5em;
+    background-color: rgb(255, 244, 33);
+    flex-grow: 3;
+}

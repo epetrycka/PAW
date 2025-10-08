@@ -1,0 +1,41 @@
+body {
+    background-color: beige;
+}
+
+.box {
+    width: 40vw;
+    height: 25vh;
+    margin: 0 auto;
+    display: flex;
+    border: 2px solid rgb(89, 89, 255);
+}
+
+.box div {
+    margin: 1px;
+    background-color: rgb(203, 238, 255);
+    border: 1px solid rgb(50, 187, 255);
+    border-radius: 5%;
+    padding: 1em;
+}
+
+.box div:nth-child(1) {
+    width: fit-content;
+    height: auto;
+}
+
+.box div:nth-child(2) {
+    width: fit-content;
+    height: max-content;
+}
+
+.selected {
+    position: relative;
+    width: fit-content;
+    height: max-content;
+    transform: translateY(100%);
+}
+
+.box div:nth-child(4) {
+    width: fit-content;
+    height: max-content;
+}

@@ -1,0 +1,65 @@
+body {
+	font-family: Times New Roman, serif;
+	background-color: white;
+	height: 100%;
+	margin: 0;
+}
+
+main {
+	background-color: #e8eee3;
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 1em;
+	padding-bottom: 10%;
+}
+
+h1 {
+	font-size: xxx-large;
+	background-color: #14556B;
+	color: white;
+	margin: 0 0 0.5em 0;
+	border-top: 3px solid rgb(229, 233, 0);
+	border-bottom: 3px solid rgb(229, 233, 0);
+	width: auto;
+	text-indent: 1em;
+	padding: 2px;
+	font-weight: 1000;
+}
+
+h2 {
+	font-size: xx-large;
+	color: black;
+	margin: 0 1em 0 1em;
+	border-bottom: 1.5px solid #14556B;
+	overflow: hidden;
+}
+
+.yellow-list {
+	color: black;
+	width: 25%;
+	height: auto;
+	float: right;
+	margin-left: 1em;
+	background-color: rgb(255, 237, 117);
+	border-top: 10px solid rgb(255, 221, 0);
+	padding: 0 1em 0.5em 1em;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0.5em;
+}
+
+ul, ol {
+	font-size: 1.2em;
+	line-height: 130%;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 130%;
+	margin: 0 1em 1em 1.7em;
+}
