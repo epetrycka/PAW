@@ -1,0 +1,18 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    background-color: burlywood;
+    justify-self: center;
+    margin: 5em;
+    height: 70vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.top {
+    grid-column: 1 / 5;
+}

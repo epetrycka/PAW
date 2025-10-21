@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.view {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+img {
+    
+}
