@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    background-color: azure;
+    margin: auto;
+    height: 240px;
+    width: 530px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(188, 188, 188);
+    gap: 2em;
+}
+
+.card img {
+    height: 100%;
+    width: auto;
+    border: 3px solid white;
+    outline: 3px solid #122535;
+    border-radius: 10px;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    font-family: Geneva, sans-serif;
+}
+
+.card .info h2, h3, p {
+    color: #122535;
+    margin: 0 0 0.25em 0;
+}
+
+.card .info button {
+    font-size: medium;
+    color: white;
+    background-color: #122535;
+    padding: 0.6em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 1em 0 1em 0;
+}
+
+.card .info .switch-box {
+    align-self: end;
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 23px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #122535;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgb(216, 216, 216);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(216, 216, 216);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #122535;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+body:has(input:checked) {
+    background-color: #122535;
+}
+
+.card:has(input:checked) {
+    background-color: #122535;
+    box-shadow: none;
+}
+
+.card:has(input:checked) img {
+    border: 3px solid #122535;
+}
+
+.card:has(input:checked) .info h2, 
+.card:has(input:checked) .info h3, 
+.card:has(input:checked) .info p {
+    color: aliceblue;
+}
+
+.card:has(input:checked) .info button {
+    background-color: aliceblue;
+    color: #122535;
+}
