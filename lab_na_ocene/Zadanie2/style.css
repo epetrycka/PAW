@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#menu-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #007bff;
+    padding: 1rem 1.7rem;
+    width: 100%;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+#menu-toggle-btn i {
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.sidebar li a {
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    gap: 1.25rem;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar li a i {
+    font-size: 1.2rem;
+    color: #007bff;
+    width: 20px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.sidebar li a .nav-text {
+    font-weight: 600;
+    color: #444;
+    font-size: 0.9rem;
+    transition: opacity 0.2s ease 0.1s, visibility 0.2s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar li a .badge {
+    margin-left: auto;
+    background: #e9ecef;
+    color: #555;
+    border-radius: 12px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.sidebar li:hover a {
+    background-color: #1abc9c;
+}
+.sidebar li.active a i,
+.sidebar li.active a .nav-text {
+    color: #ffffff;
+}
+
+.content {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+
+.sidebar.sidebar-collapsed {
+    width: 80px;
+}
+
+.sidebar.sidebar-collapsed #menu-toggle-btn {
+    text-align: center;
+    padding: 1rem;
+}
+
+.sidebar.sidebar-collapsed ul {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80px;
+    }
+    #menu-toggle-btn {
+        text-align: center;
+        padding: 1rem;
+    }
+    .sidebar ul {
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+    .sidebar li a {
+        padding: 0.9rem;
+        justify-content: center;
+    }
+    .sidebar li a .nav-text {
+        display: none;
+    }
+    .sidebar li a .badge {
+        margin-left: 0;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border-radius: 50%;
+        padding: 2px 5px;
+        font-size: 0.7rem;
+        border: 2px solid white;
+    }
+
+}

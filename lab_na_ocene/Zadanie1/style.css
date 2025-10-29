@@ -1,0 +1,90 @@
+body {
+    background-color: #404040;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.skeleton-card {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.skeleton-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.skeleton-text-lines {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skeleton-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.skeleton-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.skeleton-line {
+    height: 12px;
+    border-radius: 6px;
+}
+
+.skeleton-line.medium { width: 70%; }
+.skeleton-line.long { width: 100%; }
+.skeleton-line.short { width: 50%; }
+
+.skeleton-button {
+    flex: 1;
+    height: 44px;
+    border-radius: 22px;
+}
+
+
+.skeleton-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
