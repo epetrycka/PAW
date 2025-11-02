@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(207, 219, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gallery-container {
+    background-color: azure;
+    margin: auto;
+    height: 400px;
+    width: 600px;
+    padding: 1em;
+    box-shadow: 0px 0px 10px rgb(139, 139, 201);
+}
+
+.main-display {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.photo {
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    filter: blur(0);
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.photo img.fade-out {
+    transform: scale(2);
+    filter: blur(10px);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.main-display .overlap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.main-display #title {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 200;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    opacity: 1;
+    filter: blur(0);
+    transition: opacity 1s ease, filter 1s ease;
+}
+
+#title.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease, filter 1s ease;
+    filter: blur(0);
+}
+
+#title.fade-out {
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 1s ease, filter 1s ease;
+}
+
+.main-display .stripe {
+    background-color: rgb(73, 186, 192, 0.7);
+    color: white;
+    font-family: Calibri sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    padding: 0.6em;
+    text-align: center;
+}
+
+.main-display .divide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.main-display .divide .line {
+    background: linear-gradient(180deg, transparent, white);
+    height: 100%;
+    width: 2px;
+}
+
+.number {
+    background-color: rgb(73, 186, 192, 0.9);
+    font-family: Calibri sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 1em;
+    border: 0;
+    outline: 4px solid rgb(73, 186, 192, 0.5);
+}
+
+.number.active {
+    background-color: rgb(228, 241, 252);
+    color: rgb(73, 186, 192);
+}
+
+.number:hover {
+    cursor: pointer;
+    background-color: rgb(228, 241, 252);
+    color: rgb(73, 186, 192);
+}

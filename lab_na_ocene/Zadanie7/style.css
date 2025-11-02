@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(237, 255, 254);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Verdana, sans-serif;
+    font-size: small;
+}
+
+.title {
+    background: linear-gradient(to bottom, green, rgb(237, 255, 254));
+    margin: 0;
+    height: 15%;
+    text-align: center;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+.title h1 {
+    margin: 0;
+    padding: 0.5em;
+    font-size: xx-large;
+}
+
+table {
+    width: 55%;
+    justify-self: center;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr, th, td {
+    border: 2px solid black;
+}
+
+p {
+    margin: 0.1em;
+}
+
+.lekcje {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align:center;
+    background-color: yellow;
+    font-size: large;
+    color: green;
+    font-weight: bold;
+    width: 5%;
+}
+
+table tr:nth-child(odd){
+    background: linear-gradient(to bottom, rgb(255, 255, 223), white);
+}
+
+table tr:nth-child(even){
+    background: linear-gradient(to top, rgb(255, 255, 207), white);
+}

@@ -3,7 +3,6 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
 }
 
 .skeleton-card {
@@ -60,7 +59,6 @@ body {
     height: 44px;
     border-radius: 22px;
 }
-
 
 .skeleton-item::before {
     content: '';
