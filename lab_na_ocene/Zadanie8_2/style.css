@@ -28,64 +28,29 @@ body {
     position: relative;
 }
 
-.photo-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100%;
+.photo {
+    display: block;
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
     opacity: 0.9;
     filter: blur(0);
-}
-
-.photo-part {
-    height: 100%;
-    width: 100%;
+    z-index: 0;
     overflow: hidden;
     position: relative;
 }
 
-.photo-part img {
+.photo img {
     height: 100%;
-    width: 400%;
-    object-fit: none; 
-    position: absolute;
+    width: 100%;
+    object-fit: cover;
     transform: scale(1);
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-.photo-part img.fade-out {
+.photo img.fade-out {
     transform: scale(2);
     filter: blur(10px);
     transition: filter 0.5s ease, transform 0.5s ease;
-}
-
-.img-part-1 {
-    top: 0;
-    left: 0;
-    transform-origin: 12.5% 50%; /* obrazek pokazuje: 0-25% wiec potrzebujemy przesunac skupienie o polowe czyli 12,5% */
-}
-
-.img-part-2 {
-    top: 0;
-    left: -100%;
-    transform-origin: 37.5% 50%;
-}
-
-.img-part-3 {
-    top: 0%;
-    left: -200%;
-    transform-origin: 62.5% 50%;
-}
-
-.img-part-4 {
-    top: 0;
-    left: -300%;
-    transform-origin: 87.5% 50%;
 }
 
 .main-display .overlap {
