@@ -11,14 +11,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const baseX = 80 * i - 50;
         slide.dataset.baseX = baseX;
         slide.style.transform = `translateX(${baseX}px)`;
+        slide.style.transition = "transform 0.5s ease";
         slide.style.zIndex = i;
     });
+
+    function restartGallery() {
+        slides.forEach((slide, index) => {
+            const baseX = parseFloat(slide.dataset.baseX);
+            slide.classList.remove('active');
+
+            if (index == currentIndex) {
+                slide.classList.add('active');
+                slide.style.transform = `translateX(${baseX - 200}px)`;
+                setTimeout(() => {
+                    slide.style.zIndex = index;
+                    slide.style.transform = `translateX(${baseX}px)`;
+                }, 500);
+            }
+        });
+    }
 
     function updateGallery() {
         slides.forEach((slide, index) => {
             const baseX = parseFloat(slide.dataset.baseX);
             slide.classList.remove('active');
-            slide.style.transition = "transform 0.5s ease";
 
             if (index != currentIndex && slide.style.zIndex == '7') {
                 slide.classList.add('active');
@@ -55,6 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (index !== currentIndex) {
                 currentIndex = index;
                 updateGallery();
+            } else {
+                restartGallery();
+                currentIndex = 7;
             }
         });
         
