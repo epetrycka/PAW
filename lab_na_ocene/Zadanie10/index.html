@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar"> 
+        <h2 class="logo">John<span class="doe">Doe</span></h2>
+        <div class="menu">
+            <p class="menu-element">Home</p>
+            <p class="menu-element">About</p>
+            <p class="menu-element">Projects</p>
+            <p class="menu-element">Contact</p>
+        </div>
+        <div class="hamburger">
+            <button id="menu-tgl">
+                <i class="fa-solid fa-bars" style="color: orange; font-size: 1.5em;"></i>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-menu collapsed">
+        <div class="exit">
+            <i class="fa-solid fa-xmark" style="color: red;"></i>
+        </div>
+        <div class="options">
+            <p class="menu-element">Home</p>
+            <p class="menu-element">About</p>
+            <p class="menu-element">Projects</p>
+            <p class="menu-element">Contact</p>
+        </div>
+        <div class="socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-squarespace"></i>
+            <i class="fa-brands fa-behance"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="page">
+            <div class="short-desc">
+                <hr>
+                <h1 class="name">I'm Janek</h1>
+                <p class="subname">Freelance Web & Mobile UI/UX Designer</p>
+                <button class="hire-me">HIRE ME</button>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-squarespace"></i>
+                    <i class="fa-brands fa-behance"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img src="assets/img2.jpg" alt="boy">
+            </div>
+        </div>
+        <div class="page">
+            <div class="image-wrapper left">
+                <img src="assets/girl.jpg" alt="girl">
+            </div>
+            <div class="short-desc">
+                <h2 class="about">About</h2>
+                <hr>
+                <p class="subname">Lorem ipsum dolor sit amet. Ea sunt expedita in minima illo est sint voluptatibus et dolore molestiae eos magnam molestiae ut magnam fuga et laboriosam perspiciatis! A quia beatae et repellendus suscipit aut culpa odio est quia voluptatem qui recusandae sunt quo impedit unde est incidunt dolores.</p>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+                <button class="hire-me">ABOUT ME</button>
+            </div>
+        </div>
+        <div class="page">
+            <div>
+                <h1>Services</h1>
+                <hr>
+            </div>
+            <div  class="services">
+                <div class="service-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web development</h3>
+                    <hr>
+                    <p class="subname">Lorem ipsum dolor sit amet. Ea sunt expedita in minima illo est sint voluptatibus et dolore molestiae eos magnam molestiae ut magnam fuga et laboriosam perspiciatis!</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-regular fa-gem"></i>
+                    <h3>Web Design</h3>
+                    <hr>
+                    <p class="subname">Lorem ipsum dolor sit amet. Ea sunt expedita in minima illo est sint voluptatibus et dolore molestiae eos magnam molestiae ut magnam fuga et laboriosam perspiciatis!</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa-brands fa-android"></i>
+                    <h3>App Design</h3>
+                    <hr>
+                    <p class="subname">Lorem ipsum dolor sit amet. Ea sunt expedita in minima illo est sint voluptatibus et dolore molestiae eos magnam molestiae ut magnam fuga et laboriosam perspiciatis!</p>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div>
+                <h2>Latest Works</h2>
+                <hr>
+            </div>
+            <p class="subname">Lorem ipsum dolor sit amet. A quia beatae et repellendus suscipit aut culpa odio est quia voluptatem qui recusandae sunt quo impedit unde est incidunt dolores.</p>
+            <div class="colage">
+                <img id="iphone" src="assets/iphone.jpg" alt="">
+                <img id="macbook" src="assets/macbook.jpg" alt="">
+                <img id="pink" src="assets/pink.jpg" alt="">
+                <img id="open" src="assets/open.jpg" alt="">
+            </div>
+        </div>
+        <div class="page">
+            <div class="back-img-wrapper">
+                <img src="assets/open.jpg" alt="">
+            </div>
+            <div class="chat">
+                <div>
+                    <h2>Let's get in touch</h2>
+                    <hr>
+                </div>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+                <button class="hire-me">CONTACT ME</button>
+            </div>
+        </div>
+        <div class="page">
+            <div>
+                <h2>Skills</h2>
+                <hr>
+            </div>
+            <div class="skills">
+                <div class="skill-box">
+                    <h2>Frontend</h2>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percentage left5">50%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Java Script</span>
+                            <span class="skill-percentage left7">70%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage left8">80%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <h2>Backend</h2>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Node</span>
+                            <span class="skill-percentage left5">50%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-percentage left7">70%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage left8">80%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div>
+                <h2>Timeline</h2>
+                <hr>
+            </div>
+            <div class="timeline-box right-bottom">
+                <p class="subname" style="font-weight: bold; color: darkslateblue;">2020</p>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+            </div>
+            <div class="timeline-box left-bottom">
+                <p class="subname" style="font-weight: bold; color: darkslateblue;">2019</p>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+            </div>
+            <div class="timeline-box right-bottom">
+                <p class="subname" style="font-weight: bold; color: darkslateblue;">2018</p>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+            </div>
+            <div class="timeline-box left-bottom">
+                <p class="subname" style="font-weight: bold; color: darkslateblue;">2017</p>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+            </div>
+            <div class="timeline-box right-bottom">
+                <p class="subname" style="font-weight: bold; color: darkslateblue;">2016</p>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+            </div>
+            <div class="timeline-box left">
+                <p class="subname" style="font-weight: bold; color: darkslateblue;">2015</p>
+                <p class="subname">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+            </div>
+        </div>
+        <div class="page">
+            <div>
+                <h2>Blog</h2>
+                <hr>
+            </div>
+            <div class="blog">
+                <div class="blog-item">
+                    <div class="blog-front">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/macbook.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3 style="font-size: 1em;">Article title</h3>
+                            <p class="subname" style="font-size: 0.7em;">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <img src="assets/img2.jpg" alt="">
+                            <p class="read-time">7 MIN READ</p>
+                        </div>
+                    </div>
+                    <div class="blog-back">
+                        <button class="read-more-btn">READ MORE</button>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-front">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/iphone.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3 style="font-size: 1em;">Article title</h3>
+                            <p class="subname" style="font-size: 0.7em;">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <img src="assets/img2.jpg" alt="">
+                            <p class="read-time">7 MIN READ</p>
+                        </div>
+                    </div>
+                    <div class="blog-back">
+                        <button class="read-more-btn">READ MORE</button>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-front">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/pink.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3 style="font-size: 1em;">Article title</h3>
+                            <p class="subname" style="font-size: 0.7em;">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <img src="assets/img2.jpg" alt="">
+                            <p class="read-time">7 MIN READ</p>
+                        </div>
+                    </div>
+                    <div class="blog-back">
+                        <button class="read-more-btn">READ MORE</button>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-front">
+                        <div class="blog-img-wrapper">
+                            <img src="assets/open.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h3 style="font-size: 1em;">Article title</h3>
+                            <p class="subname" style="font-size: 0.7em;">Aut vero dolorum sit quidem galisum et illum consequatur non quisquam ducimus ea soluta tempora et officia explicabo vel rerum aperiam? Qui nihil dicta At voluptas pariatur aut velit quidem ut iste vitae hic doloribus totam qui assumenda dolores ea earum dicta.</p>
+                        </div>
+                        <div class="blog-footer">
+                            <img src="assets/img2.jpg" alt="">
+                            <p class="read-time">7 MIN READ</p>
+                        </div>
+                    </div>
+                    <div class="blog-back">
+                        <button class="read-more-btn">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-squarespace"></i>
+                <i class="fa-brands fa-behance"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p class="subname"> © 2025 by GR. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
