@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.box {
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgba(0,0,0,0.3);
+}
+
+.box span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.box-blue {
+    background-color: #e0f7fa;
+    border-color: #007bff;
+}
+.box-red {
+    background-color: #ffebee;
+    border-color: #d32f2f;
+}
+.box-yellow {
+    background-color: #fffde7;
+    border-color: #fbc02d;
+}
+
+.ui-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.log-panel {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+.log-panel h3 {
+    margin-top: 0;
+}
+.log-panel ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.log-panel li {
+    padding: 4px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.9rem;
+}
+
+.controls-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.controls-panel button {
+    padding: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.controls-panel button:hover {
+    background-color: #eee;
+}
+
+.quiz-panel {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.quiz-panel p {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.quiz-panel label {
+    display: block;
+    margin-bottom: 5px;
+}

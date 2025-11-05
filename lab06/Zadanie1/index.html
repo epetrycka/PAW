@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="app-container">
+        
+        <div class="ui-container">
+            
+            <div class="log-panel">
+                <h3>Alerts:</h3>
+                <ul id="log"></ul>
+            </div>
+            
+            <div class="controls-panel">
+                <button id="togglePropagation">Stop Propagation</button>
+                <button id="reset">Reset</button>
+                <button id="clearLog">Clear LOG</button>
+            </div>
+            
+            <div class="quiz-panel" id="quiz-panel">
+                <p>Propagation order:</p>
+                <label><input type="radio" name="order" value="1-2-3"> 1-2-3</label>
+                <label><input type="radio" name="order" value="3-2-1" checked> 3-2-1</label>
+                <label><input type="radio" name="order" value="2-3-1"> 2-3-1</label>
+                <label><input type="radio" name="order" value="1-3-2"> 1-3-2</label>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div id="box1" class="box box-blue">
+                <span>+1pkt</span>
+                <div id="box2" class="box box-red">
+                    <span>+2pkt</span>
+                    <div id="box3" class="box box-yellow">
+                        <span>+3pkt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
