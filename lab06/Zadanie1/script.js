@@ -17,6 +17,41 @@ const initialOrder = document.querySelector('input[name="order"]:checked').value
 attachListeners(initialOrder);
 logEvent(`--- Aplikacja gotowa (Tryb: ${initialOrder}) ---`);
 
+function attachListeners(order) {
+    let box1Capture = false;
+    let box2Capture = false;
+    let box3Capture = false;
+
+    switch (order) {
+        case '1-2-3':
+            box1Capture = true;
+            box2Capture = true;
+            box3Capture = true;
+            break;
+        case '3-2-1':
+            break;
+        case '2-3-1':
+            box1Capture = false;
+            box2Capture = true;
+            box3Capture = false;
+            break;
+        case '1-3-2':
+            box1Capture = true;
+            box2Capture = false;
+            box3Capture = false;
+            break;
+    }
+
+    box1.addEventListener('click', handleBox1Click, box1Capture);
+    
+    if (isBox2Active) {
+        box2.addEventListener('click', handleBox2Click, box2Capture);
+    }
+    if (isBox3Active) {
+        box3.addEventListener('click', handleBox3Click, box3Capture);
+    }
+}
+
 function logEvent(message) {
     const li = document.createElement('li');
     li.textContent = message;
@@ -72,42 +107,6 @@ function handleBox3Click(event) {
     logEvent("Nacisnąłeś Żółty o wartości 3");
     totalPoints += 3;
     checkConditions();
-}
-
-
-function attachListeners(order) {
-    let box1Capture = false;
-    let box2Capture = false;
-    let box3Capture = false;
-
-    switch (order) {
-        case '1-2-3':
-            box1Capture = true;
-            box2Capture = true;
-            box3Capture = true;
-            break;
-        case '3-2-1':
-            break;
-        case '2-3-1':
-            box1Capture = false;
-            box2Capture = true;
-            box3Capture = false;
-            break;
-        case '1-3-2':
-            box1Capture = true;
-            box2Capture = false;
-            box3Capture = false;
-            break;
-    }
-
-    box1.addEventListener('click', handleBox1Click, box1Capture);
-    
-    if (isBox2Active) {
-        box2.addEventListener('click', handleBox2Click, box2Capture);
-    }
-    if (isBox3Active) {
-        box3.addEventListener('click', handleBox3Click, box3Capture);
-    }
 }
 
 function removeListeners() {

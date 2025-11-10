@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie</title>
+    <link rel="preconnect" href="https://api.npoint.io">
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h2 id="nickname-display"></h2>
+        
+        <div id="game-board">
+            </div>
+
+        <div id="ui-overlay">
+            <div id="crosshair"></div>
+            <div id="score-display">00000</div>
+            <div id="lives-display">
+                <span>Uciekły:</span>
+                <i class="zombie-life active" id="life-1">🧟</i>
+                <i class="zombie-life active" id="life-2">🧟</i>
+                <i class="zombie-life active" id="life-3">🧟</i>
+            </div>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h2>Game Over</h2>
+            <h3 id="final-score">Twój wynik: 0</h3>
+            <h3>Ranking (Top 7)</h3>
+            <ol id="highscore-list">
+                </ol>
+            <button id="play-again-btn">Zagraj Ponownie</button>
+        </div>
+    </div>
+</body>
+</html>

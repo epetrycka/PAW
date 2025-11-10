@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #a25a96;
+    color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6d005b;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #444;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.logo .fa-camera {
+    color: #07a4ff;
+    margin-right: 8px;
+}
+
+#search-form {
+    display: flex;
+}
+
+#search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #104c6f;
+    background-color: #237fb4;
+    color: #fff;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #104c6f;
+    background-color: #104d70;;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+::placeholder {
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+#search-prompt {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.slider-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-btn {
+    background: none;
+    border: none;
+    color: #104c6f;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0 1.5rem;
+    transition: color 0.2s;
+}
+.slider-btn:hover {
+    color: #fff;
+}
+
+.slider-window {
+    width: 80%;
+    overflow: hidden;
+    border: 1px solid #104c6f;
+}
+
+#slider-strip {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+#lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    
+    backdrop-filter: blur(5px);
+    
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    border: 2px solid white;
+}
+
+#close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}

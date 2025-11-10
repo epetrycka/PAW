@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamiczna Tablica - Kraje</title>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="table-container">
+        <h1>Dynamiczna Tablica Krajów</h1>
+        
+        <nav>
+            <ul class="pagination" id="pagination-top">
+                </ul>
+        </nav>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th data-column="name">Name <i class="fa-solid fa-sort"></i></th>
+                    <th data-column="capital">Capital <i class="fa-solid fa-sort"></i></th>
+                    <th data-column="population">Population <i class="fa-solid fa-sort"></i></th>
+                    <th data-column="area">Area (km²) <i class="fa-solid fa-sort"></i></th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="filter-name" placeholder="Filtruj po nazwie..."></td>
+                    <td><input type="text" id="filter-capital" placeholder="Filtruj po stolicy..."></td>
+                    <td><input type="text" id="filter-population" placeholder="Filtruj po populacji..."></td>
+                    <td><input type="text" id="filter-area" placeholder="Filtruj po powierzchni..."></td>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr><td colspan="4" class="loader">Ładowanie danych...</td></tr>
+            </tbody>
+        </table>
+
+        <nav>
+            <ul class="pagination" id="pagination-bottom">
+                </ul>
+        </nav>
+    </div>
+</body>
+</html>

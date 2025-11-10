@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Zadanie 6</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="password-form" id="password-form">
+        <h2>Zmień hasło</h2>
+        
+        <div class="input-group">
+            <label for="new-password">New password</label>
+            <input type="password" id="new-password" placeholder="Wpisz nowe hasło">
+            <i class="fa-solid fa-eye-slash toggle-password" id="toggle-new"></i>
+        </div>
+
+        <div class="input-group">
+            <label for="repeat-password">Repeat new password</label>
+            <input type="password" id="repeat-password" placeholder="Powtórz hasło">
+            <i class="fa-solid fa-eye-slash toggle-password" id="toggle-repeat"></i>
+        </div>
+
+        <div class="requirements-card">
+            <p>Password requirements</p>
+            <ul class="requirements-list">
+                <li id="req-length">
+                    <i class="fa-solid fa-circle"></i> <span>At least 8 characters</span>
+                </li>
+                <li id="req-special">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least one special character</span>
+                </li>
+                <li id="req-capital">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least one capital letter</span>
+                </li>
+                <li id="req-digit">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>At least one digit</span>
+                </li>
+            </ul>
+        </div>
+        
+        <p id="match-message"></p>
+    </form>
+</body>
+</html>

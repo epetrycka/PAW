@@ -106,7 +106,7 @@ function solveF(data) {
         
         resultText = `Średnia powierzchnia: ${avgArea.toFixed(2)} km² (z ${pCountyCities.length} miast).`;
     }
-
+    
     renderText('result-f', resultText);
 }
 

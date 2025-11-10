@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.password-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.password-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    padding-right: 3rem; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 70%; 
+    right: 1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.requirements-card {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.requirements-card p {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.requirements-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.requirements-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.requirements-list li i {
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+
+.requirements-list li.valid {
+    color: #2ecc71;
+}
+
+.requirements-list li.valid i {
+    color: #2ecc71;
+}
+
+.requirements-list li.invalid {
+    color: #e74c3c;
+}
+
+.requirements-list li.invalid i {
+    color: #e74c3c;
+}
+
+
+#match-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    min-height: 1.2em;
+}
+
+.message-success {
+    color: #2ecc71;
+}
+
+.message-error {
+    color: #e74c3c;
+}
