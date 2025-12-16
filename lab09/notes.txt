@@ -1,0 +1,6 @@
+konfiguracja routingu
+paramtery dynamiczne
+useEffect zeby wczytywac dane z zewnetrznego źródła
+fetch moze byc ale lepiej biblioteka Axios
+predefiniowane obiekty z biblioteki
+style components

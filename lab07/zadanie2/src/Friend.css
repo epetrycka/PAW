@@ -1,0 +1,46 @@
+#root {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.friend-card {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    height: fit-content;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(209, 209, 209, 0.87);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(183, 183, 183);
+    border: none;
+}
+
+.friend-details {
+    padding: 0.2rem 0.5rem;
+    color: white;
+    background-color: rgb(255, 0, 144);
+    border: none;
+    border-radius: 2px;
+}
+
+.friend-details:active {
+    background-color: rgb(200, 0, 100);
+}
+
+.friend-phone, .friend-email {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(235, 235, 235);
+    width: 80%;
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}

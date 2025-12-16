@@ -1,0 +1,15 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 800;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  color: rgba(62, 9, 57, 0.87);
+  background-color: #ffffff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

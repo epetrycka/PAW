@@ -1,0 +1,74 @@
+.favorite {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 4px rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+h2 {
+    color: rgb(23, 166, 90);
+    margin: 0;
+    padding-top: 1rem;
+}
+
+hr {
+    border: none;
+    outline: none;
+    background-color: rgb(185, 185, 185);
+    height: 2px;
+    width: 95%;
+}
+
+.add-country {
+    height: 1.5rem;
+}
+
+.add-country #entry{
+    height: 90%;
+    margin: 0;
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.add-country #add, button {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(255, 0, 157);
+    outline: 1px solid gray;
+    border: none;
+    padding: 0 1rem;
+}
+
+.add-country #add:active {
+    background-color: rgb(172, 0, 106);
+}
+
+p {
+    color: black;
+}
+
+.countries-list {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.country {
+    background-color:  rgb(137, 216, 174);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+}
