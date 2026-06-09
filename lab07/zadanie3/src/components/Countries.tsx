@@ -10,12 +10,33 @@ function CountriesList ({countries, onDelete} : CountriesListProps) {
     if (countries.length > 0) {
         return (
             <>
-                {countries.map((country, index) => (
-                    <div className="country">
-                        <p>{index}. {country}</p>
-                        <button id="{{index}}" onClick={() => onDelete(index)}>usuń</button>
-                    </div>
-                ))}
+                {countries.map((country, index) => {
+                    let extraClass = "";
+
+                    if (index % 2 === 0 && country.toLocaleLowerCase().includes("a") && country.toLocaleLowerCase().includes("r")) {
+                        extraClass = "blue";
+                    } 
+                    else if (index % 2 === 0 && !country.toLocaleLowerCase().includes("a") && !country.toLocaleLowerCase().includes("r")) {
+                        extraClass = "yellow";
+                    } 
+                    else if (index % 2 !== 0 && country.length > 6) {
+                        extraClass = "orange";
+                    } 
+                    else if (index % 2 !== 0 && country.length < 6) {
+                        extraClass = "gray";
+                    }
+
+                    return (
+                        <div className={`country ${extraClass}`} key={index}>
+                            <p>{index}. <a  href={`https://pl.wikipedia.org/wiki/${country}`} 
+                                            style={{color: "inherit", textDecoration: "none"}}
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                            {country}</a></p>
+                            <button id="delete" onClick={() => onDelete(index)}>usuń</button>
+                        </div>
+                    )
+                })}
             </>
         )
     }

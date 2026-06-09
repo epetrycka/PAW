@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Rosół Królewski",
+    "type": "Zupa",
+    "cuisine": "Polska",
+    "diet": "Mięsna",
+    "calories": 45,
+    "ingredients": "kurczak, marchew, pietruszka, makaron, lubczyk"
+  },
+  {
+    "id": 2,
+    "name": "Spaghetti Carbonara",
+    "type": "Danie główne",
+    "cuisine": "Włoska",
+    "diet": "Mięsna",
+    "calories": 280,
+    "ingredients": "makaron, jajka, guanciale, ser pecorino, pieprz"
+  },
+  {
+    "id": 3,
+    "name": "Falafel w picie",
+    "type": "Danie główne",
+    "cuisine": "Arabska",
+    "diet": "Wegańska",
+    "calories": 180,
+    "ingredients": "ciecierzyca, pita, ogórek, sos tahini"
+  },
+  {
+    "id": 4,
+    "name": "Sałatka Caprese",
+    "type": "Przekąska",
+    "cuisine": "Włoska",
+    "diet": "Wegetariańska",
+    "calories": 120,
+    "ingredients": "pomidor, mozzarella, bazylia, oliwa"
+  }
+]

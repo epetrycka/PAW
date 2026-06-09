@@ -35,7 +35,7 @@ hr {
     border: 1px solid gray;
 }
 
-.add-country #add, button {
+.add-country #add, #delete {
     height: 100%;
     margin: 0;
     background-color: rgb(255, 0, 157);
@@ -71,4 +71,20 @@ p {
     justify-content: center;
     gap: 1rem;
     font-weight: bold;
+}
+
+.country.blue {
+    background-color: rgb(95, 242, 255);
+}
+
+.country.yellow {
+    background-color: rgb(241, 241, 167);
+}
+
+.country.orange {
+    background-color: rgb(255, 223, 163);
+}
+
+.country.gray {
+    background-color: rgb(180, 180, 180);
 }
